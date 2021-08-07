@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordes_redondos_azul"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_StartRecord"
+                android:textColor="@color/white"
+                android:text="Grabar sonido"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_StartRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/red"
+                    android:text="RECORD"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/btn_StopRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/stop"
+                    android:text="STOP"
+                    android:textAlignment="center"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_play"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+                android:text="Escuchar sonido"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                tools:ignore="ObsoleteLayoutParam" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="PLAY"
+                    android:textAlignment="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/stop"
+                    android:text="STOP"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
