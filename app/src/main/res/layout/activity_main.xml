@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:background="@drawable/bordes_redondos_azul"
         android:orientation="horizontal">
 
@@ -33,14 +34,14 @@
                 android:layout_marginLeft="25dp"
                 android:layout_height="wrap_content">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btn_StartRecord"
                     android:layout_width="wrap_content"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:backgroundTint="@color/red"
-                    android:text="RECORD"
+                    android:background="@drawable/player_record_1084"
+                    android:text="Iniciar"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="5dp"
                     android:textAlignment="center" />
@@ -52,7 +53,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:background="@drawable/stop"
+                    android:background="@drawable/player_stop_1081"
                     android:text="STOP"
                     android:textAlignment="center"
 
@@ -79,16 +80,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btn_play"
                     android:layout_width="wrap_content"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="18dp"
                     android:layout_marginRight="5dp"
-                    android:backgroundTint="@color/blue"
-                    android:text="PLAY"
+                    android:background="@drawable/player_game_1085"
+                    android:text="iniciar"
                     android:textAlignment="center"/>
 
                 <ImageButton
@@ -98,7 +99,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:background="@drawable/stop"
+                    android:background="@drawable/player_stop_1081"
                     android:text="STOP"
                     android:textAlignment="center"/>
             </LinearLayout>

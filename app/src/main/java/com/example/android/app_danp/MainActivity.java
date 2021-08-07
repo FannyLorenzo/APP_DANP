@@ -22,7 +22,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton btnStopRecord, btnStop; // Botones de grabar audio, parar grabación, Iniciar reproducción y Parar reproducción
-    Button btnRecord, btnPlay;
+    ImageButton btnRecord, btnPlay;
     String pathSave = ""; // Dirección del sonido guardado
     MediaRecorder mediaRecorder;
     MediaPlayer mediaPlayer;
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 btnPlay.setEnabled(true);
                 btnRecord.setEnabled(true);
                 btnStop.setEnabled(false);
+                    Toast.makeText(MainActivity.this, "Guardando audio..", Toast.LENGTH_SHORT).show();
                 }
             });
 
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
                         mediaPlayer.stop();
                         mediaPlayer.release();
                         setupMediaRecorder();
+                        Toast.makeText(MainActivity.this, "Parar de escuchar..", Toast.LENGTH_SHORT).show();
 
                     }
                 }
